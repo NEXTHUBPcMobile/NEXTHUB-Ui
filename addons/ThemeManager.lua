@@ -5,13 +5,12 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-    ['NEXT HUB'] = { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"080b0f","AccentColor":"66fef7","AccentColor2":"66fef7","AccentColor3":"66fef7","BackgroundColor":"080b0f","OutlineColor":"282a2d"}') },
-    ['Color Ui 1'] = { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"080b0f","AccentColor":"ffa800","AccentColor2":"ffa800","AccentColor3":"ffa800","BackgroundColor":"080b0f","OutlineColor":"282a2d"}') },
-	['Color Ui 2'] = { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"080b0e","AccentColor":"ff0026","AccentColor2":"ff0026","AccentColor3":"ff0026","BackgroundColor":"080b0f","OutlineColor":"282a2d"}') },
-	['Color Ui 3'] = { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"000f1e","AccentColor":"00b4f0","AccentColor2":"00b4f0","AccentColor3":"00b4f0","BackgroundColor":"050514","OutlineColor":"0a1e28"}') },
-    ['Color Ui 4'] = { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"181825","AccentColor":"ff3c3c","AccentColor2":"ff3c3c","AccentColor3":"ff3c3c","BackgroundColor":"16161f","OutlineColor":"323232"}') },
-    ['Color Ui 5'] = { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0b0d0f","AccentColor":"6b86a2","AccentColor2":"6b86a2","AccentColor3":"6b86a2","BackgroundColor":"0d0e0f","OutlineColor":"24282b"}') },
-	['Color Ui Discord'] = { 7, httpService:JSONDecode('{"FontColor":"ffffff","AccentColor3":"d24040","MainColor":"151719","AccentColor":"477ab5","AccentColor2":"51cb2d","BackgroundColor":"202225","OutlineColor":"454545"}') },
+        ['NEXT HUB'] = { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"080b0f","AccentColor":"66fef7","AccentColor2":"66fef7","AccentColor3":"66fef7","BackgroundColor":"080b0f","OutlineColor":"282a2d"}') },
+	['G1'] = { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"080b0e","AccentColor":"ff0026","AccentColor2":"ff0026","AccentColor3":"ff0026","BackgroundColor":"080b0f","OutlineColor":"282a2d"}') },
+	['G2'] = { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"000f1e","AccentColor":"00b4f0","AccentColor2":"00b4f0","AccentColor3":"00b4f0","BackgroundColor":"050514","OutlineColor":"0a1e28"}') },
+    ['G3'] = { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"181825","AccentColor":"ff3c3c","AccentColor2":"ff3c3c","AccentColor3":"ff3c3c","BackgroundColor":"16161f","OutlineColor":"323232"}') },
+    ['G4'] = { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0b0d0f","AccentColor":"6b86a2","AccentColor2":"6b86a2","AccentColor3":"6b86a2","BackgroundColor":"0d0e0f","OutlineColor":"24282b"}') },
+	['Discord'] = { 6, httpService:JSONDecode('{"FontColor":"ffffff","AccentColor3":"d24040","MainColor":"151719","AccentColor":"477ab5","AccentColor2":"51cb2d","BackgroundColor":"202225","OutlineColor":"454545"}') },
 }
 
 	function ThemeManager:ApplyTheme(theme)
